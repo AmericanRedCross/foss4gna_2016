@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>POSM</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'> -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href='big.css' rel='stylesheet' type='text/css' />
+  <script src='big.js'></script>
+</head>
+<body>
+  <div data-bodyclass="white"> <img src="images/posm-logo-full.png" /></div>
+  <div>
+    <em><big>Dale Kunce</big></em>
+    <br />
+    <small class='nobreak'><a href="http://twitter.com/calimapnerd">@calimapnerd</a> / <em class="red">American Red Cross</em></small>
+    <notes>Dale, I lead the GIS team at the American Red Cross</notes>
+  </div>
+  <div>
+    Red Cross <i class="fa fa-heart red" aria-hidden="true"></i> FOSS4G
+    <notes>My team's work is powered by FOSS. Everyone on the team uses FOSS software everyday. Many others contribute directly to projects</notes>
+  </div>
+  <div>
+    <em class="red">Red Cross </em>
+    <br /><i class="fa fa-globe"></i> <i class="fa fa-database"></i> is 100% <em>Open Source</em>
+    <notes>The RC GIS team is 100% open source. all of our work is done using FOSS tools. We train others on how to use FOSS4G. The traditional cost of propritary software is both to high for us and puts an undo burden on the folks with work with around the world. We call this a leave behind cost. We strive to make our leave behind cost $0.</notes>
+  </div>
+  <div>
+    OSM is the <em class="red">Core</em>
+    <notes>FOSS tools only get us so far. For data both before and after major events we prefer OSM. It fits with our needs and we love empowering people to collect and map their communities.</notes>
+  </div>
+  <div><em><i class="fa fa-globe"></i></em> in the field
+    <notes>We don't just map from a far. Our team gets mud on our shoes. We are constantly out adding the detail to the map that you can't see from space. The detail is not just about making the map pretty but about understanding and preparing the community for the worst day they will ever see.</notes>
+  </div>
+  <div><img src="images/redcross_car.jpg" />
+    <small>our version of field is <em>really</em> remote</small>
+    <notes>We aren't mapping next to our local pub and going for bike rides after. We aren't mapping before we meet up with friends. Our mapping is often in the most remote places in the world. Places where there i no tourism industry let alone local OSM mappers.</notes>
+  </div>
+  <div>
+    <small>we field map at</small> <big class="red">scale</big>
+    <notes>Conversly our mapping projects tend to be very very intense. We map very large areas in a just a few days or weeks. We can map every poi, streetname, and building in a 10-20km2 area in a week.
+    </div>
+    <div><img src="images/scale.jpg" />
+      <notes>Our mapping is also just at a different scale. Recently for a mapping trip in west africa we configured over 130 phones. We are training 200+ people to map in OSM. Many have never used a smartphone or GPS before.</notes>
+    </div>
+    <div> <img src="images/chicken.jpg" />
+      <notes>We train lots of new mappers so more traditional OSM tools like Maps.Me or vespuccia don't work in these contexts</notes>
+    </div>
+    <div><img src="images/bridge-crossing.jpg" /><em>local</em> mapping
+      <notes>We also depend on and use the Red Cross network extensively. We can map anywhere in the world with people from any given place. We help to create and build local mappers.</notes>
+    </div>
+    <div><img src="images/interview.jpg" /><small><em>community</em> mapping
+      <notes>We map in different ways, we are not often interested in everything we can map but more likely in a small number of features across huge areas such as hospitals or road conditions. Or we are interested in stuff like building=quality that only a few others are interested in.</notes>
+    </div>
+    <div><img src="images/mapping.jpg" />
+      <notes>We map in different ways, we are not often interested in everything we can map but more likely in a small number of features across huge areas such as hospitals or road conditions. Or we are interested in stuff like building=quality that only a few others are interested in.</notes>
+    </div>
+    <div><img src="images/headlamp.jpg" />partially connected
+      <notes>Lastly we map in areas where internet or power is often not riliable or is non-existent.</notes>
+    </div>
+    <div class="blink red">Ebola
+      <notes>Ebola changed a lot of things. The most important thing it changed for my team was a desire to do more on the ground mapping, especially in the remotest areas in the world.</notes>
+    </div>
+    <div> <img src="images/westafrica_aoi.png" />
+      <notes>Working with a very good partner we decided to map the Liberian, Guinea, and Sierra Leone borders. The area is just a little smaller than Switzerland or for us American's West Virginia.</notes>
+    </div>
+    <div data-bodyclass="white"><img src="images/posm_infographic.png" /></div>
+    <div data-bodyclass="bg-contain"><img src="images/nuc.jpeg" /><$300
+      <notes>the goal of the POSM hardware is to make it as cheap as possible. Currently we have things running on a <$300 Intel Nuc. Our eventual goal is to get it running on a Raspberry Pi, we've already had lot of success running OMK Server on lightweight hardware.</notes>
+    </div>
+    <div><img src="images/scarydiagram.png" />
+      <notes>um yeah there is a lot going on. Offline OSM is really complicated. The project managers on the project literally had a panic attack and started screaming scope scope over and over again when we made this diagram.</notes>
+    </div>
+    <div><a href="http://github.com/americanredcross/posm-build">posm build</a>
+
+      <notes>all of this cool tech is great and all but we needed a very simple way to deply it to the servers. something that even I could follow. Right from the begining on the very first day we specced out posm-build. posm-build is a custom ubuntu build with kickstart to modulary install all the pieces you need to run all or part of the posm stack.</notes>
+    </div>
+    <div>HOT Export</div>
+    <div> <img src="images/hotexport.png" /></div>
+    <div>Captive Portal</div>
+    <div data-bodyclass="bg-contain"><img src="images/posm-portal.png" />
+      <notes>for posm to work right and makes the setup of clients super easy we needed to control the wifi, we built a captive portal that will grab any wifi client and redirect to posm.</notes>
+    </div>
+    <div>OSMAPI</div>
+    <div> <img src="images/id-editor.png" />
+      <notes>after some back and forth we put the whole OSMAPI on the server.</notes>
+    </div>
+    <div>POSM Carto</div>
+    <div><img src="images/posm-carto.png" />
+      <notes>existing map styles just weren't good enough so we made a high contrast style for B/W rendering for Field Papers</notes>
+    </div>
+    <div>POSM Admin</div>
+    <div> <img src="images/posm_admin1.png" />
+      <notes>POSM admin interface allows users to change all kinds of stuff including wifi settings, disk space, etc. The most important feature is the ability to provision the server with </notes>
+    </div>
+    <div><img src="images/omk-phones.jpg" /></div>
+    <div> <img src="images/add-poi.png" /></div>
+    <div> <img src="images/fp-atlas.png" /></div>
+    <div> <img src="images/fp_filled.jpg" /></div>
+    <div> <img src="images/deployments2.png" />Deployments</div>
+    <div><img src="images/omk-server.png" /></div>
+    <div><img src="images/omk-server-table.png" /></div>
+
+    <div><em class='blink red'>Live disconnected</em> editing of OSM</div>
+    <div><img src="images/josm-server.png" />
+      <notes>we have a custom version of iD that allows us to moderate edits as they come in from the field and save to the local OSM API</notes>
+    </div>
+    <div><img src="images/omk-id.png" />
+      <notes>we have a custom version of iD that allows us to moderate edits as they come in from the field and save to the local OSM API</notes>
+    </div>
+    <div> <img src="images/dale_posm.jpg" />
+      <notes>once we have all the data from the field we need to push it to OSM. We built a replay tool that takes all of the local edits on POSM and sends them to OSM changeset by changeset to minimize conflicts and be more in line with how OSM actually works. I don't fully understand it right now but the goal is to make it a simple button eventually.</notes>
+    </div>
+    <div><a href="https://github.com/AmericanRedCross/posm-replay-tool">OSM Replay Tool</a>
+      <notes>once we have all the data from the field we need to push it to OSM. We built a replay tool that takes all of the local edits on POSM and sends them to OSM changeset by changeset to minimize conflicts and be more in line with how OSM actually works. I don't fully understand it right now but the goal is to make it a simple button eventually.</notes>
+    </div>
+    <div><img src="images/overpass_dkunce_import.png" /></div>
+    <div>
+      Project Links
+      <ul>
+        <li>http://github.com/americanredcross/posm</li>
+        <li>http://openmapkit.org</li>
+        <li>http://github.com/americanredcross/openmapkit</li>
+      </ul>
+    </div>
+    <div><img src="images/posm_yes.gif" /></div>
+    <div>Demo<small>?!?!</small></div>
+  </body>
